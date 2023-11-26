@@ -16,25 +16,55 @@
     --nav-hover-background-color: #3a4431;
 }
 
-body {
-    max-width: 100%;
-	margin: 1em;
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.mainSection {
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+    padding: 10px;
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 120px 1fr;
     align-items: center;
     padding: 1rem;
+    border-bottom: 2px solid #000;
 }
 
-header > img {
-    max-width: 6rem;
-    height: auto;
+.logo {
+	margin: 0 0.25rem 0 1rem;
+	width: 80px;
+	height: auto;
 }
 
-header > nav > a {
-    padding: 1.5rem;
+header > nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
     font-size: 1.5rem;
+	color: navy;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: var(--accent2-color);
+	font-weight: 700;
 }
 
 h1, h2, h3, h4, h5{
@@ -55,7 +85,6 @@ a {
     font-weight: bold;
 }
 
-/* Class */
 .hero {
     position: relative;
 }
@@ -69,12 +98,11 @@ a {
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     text-align: center;
-    margin: 0;
     font-size: 4.5em;
 }
 
@@ -104,6 +132,72 @@ a {
     color: white;
 }
 
-.sociallinks img{
-    max-width: 50px;
+section > h2 {
+    display: flex;
+    font-size: 2.8em;
+    justify-content: center;
 }
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 20px;
+}
+
+.history img{
+    grid-column: 2/3;
+    border-radius: 50% 4px;
+    max-width: 400px;
+    height: auto;
+}
+
+.images img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.imagesGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 10px;
+  }
+  
+
+.sociallinks {
+    display: flex;
+    justify-self: flex-end;
+    gap: 10px;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: auto;
+}
+
+figure {
+    border: rgba(146, 161, 149, 0.3) solid 1px;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: var(--paragraph-font);
+    font-weight: lighter;
+    padding: 3px;
+    text-align: center;
+  }
+  
