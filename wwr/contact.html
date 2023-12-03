@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page of Adventure Rafting company.">
+    <meta name="author" content="Matheus Grigio da Silva">
+    <title>Contact - Adventure Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="Adventure Rafting Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Company Information</legend>
+            <div class="company-information-grid">
+                <p class="information-title"><b>Address:</b></p>
+                <p> 123 River St - Jersey City - EUA</p>
+                <p class="information-title"><b>Phone Number:</b></p>
+                <p>+123 9999-9999</p>
+                <p class="information-title"><b>Email:</b> </p>
+                <p>Adventure.Rafting@gmail.com</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.084880881591!2d-74.0482344!3d40.716147899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b7492cd88d%3A0x82069543f09efc5!2s123%20River%20St%2C%20Jersey%20City%2C%20NJ%2007302%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1701560881544!5m2!1spt-BR!2sbr"
+                    width="600" height="350" style="border:1px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h2>Our People</h2>
+            <div class="employee-images-grid">
+                <figure>
+                    <img src="images/Instructor_01.png" alt="">
+                    <figcaption>Jerremy, our senior instructor of Adventure Rafting, with about 10 years of experience.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Instructor_02.png" alt="">
+                    <figcaption>Laysla, our charismatic attendant, responsible for scheduling and finance. </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Instructor_03.png" alt="">
+                    <figcaption>John, our playfull and good-natured lifeguard that will cover you all the way.
+                    </figcaption>
+                </figure>
+            </div>
+        </fieldset>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div class="form-item column2">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-item column2">
+                    <label for="address">Email Address:</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="form-item column2">
+                    <label for="purpose">Purpouse: </label>
+                    <select name="purpose" id="purpose">
+                        <option value="" selected disabled>Choose One...</option>
+                        <option value="GeneralInquiry">General Inquiry</option>
+                        <option value="ReservationQuestion">Reservation Question</option>
+                        <option value="WebSiteSuggestion">Website Suggestion</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="5"></textarea>
+                </div>
+                <div class="form-item checkbox">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                </div>
+            </fieldset>
+            <div class="submit-button">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 | Adventure Rafting | Matheus Grigio</p>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook._logo.svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter_logo.svg" alt="Twitter">
+            </a>
+            <a href="https://www.instragram.com" target="_blank">
+                <img src="images/instagram_logo.svg" alt="Instagram">
+            </a>
+        </nav>
+
+        <!-- Wireframe URL: https://lucid.app/lucidchart/4f8ceb02-6eda-4c91-a3a2-9e5a42edb633/edit?viewport_loc=-1066%2C90%2C4039%2C1925%2CuP1BopAARZY8&invitationId=inv_83c7b41b-0f38-4a44-8690-06d6a0c0d2d3 -->
+    </footer>
+</body>
+
+</html>

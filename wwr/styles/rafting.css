@@ -67,7 +67,7 @@ header > nav {
 	font-weight: 700;
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, legend{
     font-weight: bold;
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -169,6 +169,7 @@ footer {
     justify-content: flex-end;
     align-content: center;
     padding: 10px;
+    border-top: 2px solid #000;
   }
   
 
@@ -199,5 +200,93 @@ figcaption {
     font-weight: lighter;
     padding: 3px;
     text-align: center;
-  }
+}
   
+fieldset {
+    margin-top: 1rem;
+    /* padding: 1em; */
+}
+
+legend {
+    font-size: 2.5em;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.company-information-grid {
+    display: grid;
+    grid-gap: 0.1rem;
+    grid-template-columns: 130px 1fr;
+}
+
+.information-title {
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.employee-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.2rem;
+    margin-top: 2em;
+}
+
+.employee-images-grid figure{
+    max-width: 260px;
+}
+
+.employee-images-grid figcaption{
+    width: 245px;
+}
+
+.employee-images-grid img{
+    width: 250px;
+    height: 250px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 0.6em;
+    font-family: var(--paragraph-font);
+}
+
+.column2 {
+    grid-template-columns: 0.5fr 2fr;
+}
+
+.checkbox {
+    grid-template-columns: 350px 1fr;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    color: var(--accent2-color);
+    background-color: var(--nav-background-color);
+	font-weight: 700;
+}
