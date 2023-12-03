@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact page of Adventure Rafting company.">
+    <meta name="description"
+        content="Get in touch with Adventure Rafting for thrilling river adventures! Contact us for inquiries, reservations, and more. Plan your next exciting journey with our experienced team.">
     <meta name="author" content="Matheus Grigio da Silva">
     <title>Contact - Adventure Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
@@ -20,7 +21,6 @@
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
     </header>
     <main>
@@ -37,10 +37,10 @@
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.084880881591!2d-74.0482344!3d40.716147899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b7492cd88d%3A0x82069543f09efc5!2s123%20River%20St%2C%20Jersey%20City%2C%20NJ%2007302%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1701560881544!5m2!1spt-BR!2sbr"
-                    width="600" height="350" style="border:1px;" allowfullscreen="" loading="lazy"
+                    width="600" height="350" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <h2>Our People</h2>
+            <h1>Our People</h1>
             <div class="employee-images-grid">
                 <figure>
                     <img src="images/Instructor_01.png" alt="">
@@ -71,12 +71,20 @@
                 </div>
                 <div class="form-item column2">
                     <label for="purpose">Purpouse: </label>
-                    <select name="purpose" id="purpose">
-                        <option value="" selected disabled>Choose One...</option>
-                        <option value="GeneralInquiry">General Inquiry</option>
-                        <option value="ReservationQuestion">Reservation Question</option>
-                        <option value="WebSiteSuggestion">Website Suggestion</option>
-                    </select>
+                    <div class="radio-inputs">
+                        <div>
+                            <input type="radio" name="purpose" id="generalInquiry" value="GeneralInquiry">
+                            <label for="generalInquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="purpose" id="reservationQuestion" value="ReservationQuestion">
+                            <label for="reservationQuestion">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="purpose" id="websiteSuggestion" value="WebSiteSuggestion">
+                            <label for="websiteSuggestion">Website Suggestion</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-item">
                     <label for="message">Message:</label>

@@ -290,3 +290,8 @@ button:hover {
     background-color: var(--nav-background-color);
 	font-weight: 700;
 }
+
+.radio-inputs {
+    display: flex;
+    justify-content: space-between;
+}
